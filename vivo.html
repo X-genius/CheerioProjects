@@ -1,0 +1,826 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="all">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta content="telephone=no,email=no" name="format-detection">
+<meta name="google-site-verification" content="E-7gZJW4cW6Cf7VJQpdOKF6gQ6mwyrfguXubRyJSW4M" />
+<title>vivo V17 | vivo India</title>
+<meta name="title" content="vivo V17 | vivo India"/>
+<meta name="keywords" content="vivo,V17,vivo India"/>
+<meta name="description" content="vivo V17 | vivo India"/>
+<link rel="dns-prefetch" href="//asia-exstatic.vivo.com" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//passport.vivo.com" />
+<link rel="dns-prefetch" href="//mshop.vivo.com" />
+<link rel="dns-prefetch" href="//shop.vivo.com" />
+<link rel="dns-prefetch" href="//in-exstatic-vivofs.vivo.com" />
+<link rel="shortcut icon" href="//asia-exstatic.vivo.com/dist/favicon_ecf768e.ico" type="image/vnd.microsoft.icon" />
+<script>
+var globalVar={}
+globalVar.userAgent = navigator.userAgent.toLowerCase(); // 获取UA信息
+globalVar.isApp = /VivoExSpace/i.test(globalVar.userAgent); // 判断ua中是否含有和app端的标识VivoExSpace
+globalVar.countryId="in";
+globalVar.versionNumber="";
+var globalAPI = {}
+globalAPI.setCookie = function (key, value, hours, domainName) {
+var expire = ''
+if (hours) {
+expire += ';expires=' + new Date((new Date()).getTime() + hours * 3600000).toGMTString()
+}
+if (domainName) {
+expire += ';domain=' + domainName
+}
+document.cookie = key + '=' + escape(value) + expire + ';path=/' // 全域名下可用
+}
+globalAPI.getCookie = function (key) {
+var cookieValue = ''
+var search = key + '='
+if (document.cookie.length > 0) {
+var offset = document.cookie.indexOf(search)
+if (offset != -1) {
+offset += search.length
+var end = document.cookie.indexOf(';', offset)
+if (end == -1) {
+end = document.cookie.length
+}
+cookieValue = unescape(document.cookie.substring(offset, end))
+}
+}
+return cookieValue
+}
+</script>
+<script>
+!function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>768&&(b=768*i);var c=b/10.8;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=a.navigator.userAgent,q=(!!p.match(/android/gi),!!p.match(/iphone/gi)),r=q&&!!p.match(/OS 9_3/),s=a.devicePixelRatio;i=q&&!r?s>=3&&(!i||i>=3)?3:s>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var t=e.createElement("div");t.appendChild(g),e.write(t.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,0)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,0))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+!(function(c){function a(){c.documentElement.className+=" vivo-webp"}if(!/(^|;\s?)vivo-webp=A/.test(document.cookie)){var b=new Image();b.onload=function(){if(b.width==1){a();document.cookie="vivo-webp=A; max-age=31536000;"}};b.src="data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}else{a()}}(document));
+</script>
+<script>
+var VIVO_WEB_HOST = "https://www.vivo.com";
+var VIVO_STATIC_HOST = "https://in-exstatic.vivo.com";
+var userOpenId = "";
+var VI_GLOBAL_NOWTIME = new Date().getTime();
+//搜索页面路径
+globalVar.searchUrl="/in/searchData/search";
+globalVar.path="";
+globalVar.layoutShow = '0'
+globalVar.appHeaderFooterRemoved = ''
+globalVar.isGDPR=false;
+globalVar.appAgreed = ""
+globalVar.isAgreed=!!globalVar.appAgreed || !!globalAPI.getCookie('gdpr_remind_version_' + globalVar.countryId);
+globalVar.commonNotGdprCookie = "Our site uses cookies to improve your experience. By continuing to use our site, you agree to our use of cookies and our <a>Privacy Policy<\/a>.";
+globalVar.privacyPromptStrUrl="/in/index/privacyPolicy";
+globalVar.isSwCacheEnableStr = "false";
+globalVar.version = "v1.1";
+globalVar.dataCenter = "in";
+globalVar.isSwCacheEnable = globalVar.isSwCacheEnableStr && globalVar.isSwCacheEnableStr=='true' ? true : false;
+globalVar.trackSwitch = globalVar.isGDPR ? false : "true"
+globalVar.privacyPolicyAccept="Accept";
+globalVar.noticeBoard = {
+noticeTitle: "Special Concern For Valuable vivo Users",
+linkContent: "Learn More > >",
+linkUrl: "https://www.vivo.com/in/about-vivo/news/freewarrantyextension",
+isShow: "1",
+isJump: "1"
+}
+globalVar.servicePopup = {
+popTitle: "Special Concern For Valued vivo Users",
+popContent: "<p style=\"margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0\"><span style=\"font-family: languageFont, serif;\">Are you thinking about your warranty period expiration?&nbsp;<\/span><br/><\/p><p><span style=\"font-family:&#39;languageFont&#39;,serif;color:black\">‘vivo service’ is all-time more caring. So, for all the handset expiring warranty period between 1st March 2020 to 31st May 2020, warranty extended for 90 more days.&nbsp;<\/span><span style=\"font-family: languageFont, serif;\">For the handset expiring replacement period between 15th March 2020 to 30th May 2020, extended replacement date to 31st May 2020.<\/span><\/p><p style=\"margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0\"><span style=\"font-family:&#39;languageFont&#39;,serif;color:black\">Before service center resume business, for handset which have one-time screen replacement offer or extended warranty going to expire, extended the service validation period by 7 days for customers, calculated from the day when service center resume business.<\/span><\/p><p style=\"margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0\"><span style=\"font-family:&#39;languageFont&#39;,serif;color:black\">Though our service centers will be remaining closed, but we are open to give you service through-<\/span><\/p><p style=\"margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0\"><span style=\"font-family:&#39;languageFont&#39;,serif;color:black\"><span style=\"font-family: languageFont, serif;\">Email:<\/span><a href=\"file:///D:/My%20Documents/Documents/WeChat%20Files/RRR_5D/FileStorage/File/2020-04/vcare@vivo.com\" style=\"white-space: normal;\"><span style=\"font-family: languageFont, serif;\">vcare@vivo.com<\/span><\/a><\/span><\/p><p style=\"margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0\"><span style=\"font-family:&#39;languageFont&#39;,serif;color:black\">Hotline numbers: 1800-208-3388&amp;1800-102-3388&nbsp;<\/span><\/p><p style=\"margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0\"><span style=\"font-family:&#39;languageFont&#39;,serif;color:black\">Facebook page:<\/span> <span style=\"font-family:&#39;languageFont&#39;,serif\"><a href=\"https://www.facebook.com/vivoIndia/\">https://www.facebook.com/vivoIndia/<\/a><\/span><\/p><p style=\"margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0\"><span style=\"font-family:&#39;languageFont&#39;,serif;color:black\">#staysafeatHOME<\/span><\/p><p><br/><\/p>",
+isShow: "0"
+}
+/* 埋点初始化代码 */
+window.dataLayer = window.dataLayer ||[];
+window.dataLayer.push({
+"siteVersion": "new official"
+})
+</script>
+<script>
+var localVAR={};
+localVAR.prodName="V17";
+</script>
+<script src="//asia-exstatic.vivo.com/dist/lib/jquery.min.3.3.1_7679e5a.js"></script>
+<style>@font-face{font-family: 'AvenirNext';src: url('//asia-exstatic.vivo.com/dist/font/AvenirNext/AvenirNextRegular_7ac5f36.eot');src: local('AvenirNext'),url('//asia-exstatic.vivo.com/dist/font/AvenirNext/AvenirNextRegular_6b6dbe3.woff2') format('woff2'),url('//asia-exstatic.vivo.com/dist/font/AvenirNext/AvenirNextRegular_2d26b87.woff') format('woff'),url('//asia-exstatic.vivo.com/dist/font/AvenirNext/AvenirNextRegular_c99fe90.ttf') format('truetype'),url('//asia-exstatic.vivo.com/dist/font/AvenirNext/AvenirNextRegular_e7a17f8.svg') format('svg');font-weight: normal;font-style: normal;}@font-face{font-family: 'WebRupee';src: url('//asia-exstatic.vivo.com/dist/font/currency/WebRupee.V2.0_30b42a0.eot');src: local('WebRupee'),url('//asia-exstatic.vivo.com/dist/font/currency/WebRupee.V2.0_5dc4203.woff2') format('woff2'),url('//asia-exstatic.vivo.com/dist/font/currency/WebRupee.V2.0_5bb128f.woff') format('woff'),url('//asia-exstatic.vivo.com/dist/font/currency/WebRupee.V2.0_388288f.ttf') format('truetype'),url('//asia-exstatic.vivo.com/dist/font/currency/WebRupee.V2.0_77414ca.svg') format('svg');font-weight: normal;font-style: normal; }.public *,.vep-public *{font-family:"AvenirNext","Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu,sans-serif,"WebRupee";}</style>
+<link href="//asia-exstatic.vivo.com/dist/css/vicon_177b672.css" rel="stylesheet" type="text/css">
+<link href="//asia-exstatic.vivo.com/dist/bus/vep-global/dist/css/vep-global_aad29fb.css" rel="stylesheet" type="text/css"> <link href="//asia-exstatic.vivo.com/dist/css/public_b96081e.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//asia-exstatic.vivo.com/dist/lib/swiper/swiper.4.3.2.min_025de34.css">
+<link href="//asia-exstatic.vivo.com/dist/css/product/product-del_e5fa568.css" rel="stylesheet" type="text/css">
+</head>
+<body class="public_whitebg" data-nav="Products" data-page="product-details">
+<h1 class="visuallyhidden">vivo</h1>
+<nav id="header">
+<div class="vep-head vep-public vep-responsive">
+<div class="vep-head-common">
+<div class="vep-head-bg">
+<div class="vep-head-container">
+<ul class="vep-head-btn">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<div class="vep-head-logo">
+<a href="//www.vivo.com/in" class="vep-head-logo-link">
+<svg viewBox="0 0 3912 1024" xmlns="http://www.w3.org/2000/svg" class="vep-head-logo-small">
+<g id="vivo_logo">
+<path d="m3522.471385 853.333333h-336.436513c-189.111795 0-205.929026-155.871179-205.929026-203.487179s16.817231-203.48718 205.929026-203.48718h336.436513c189.124923 0 205.942153 155.87118 205.942153 203.48718s-16.81723 203.487179-205.942153 203.487179m7.31241-577.641025h-337.92c-351.179487 0-382.424616 286.588718-382.424616 374.153846s31.245129 374.153846 382.424616 374.153846h337.92c351.192615 0 382.424615-286.588718 382.424615-374.153846s-31.232-374.153846-382.424615-374.153846"></path><path d="m2741.894564 301.948718h-109.554872c-46.920205 0-56.582564 7.890051-74.67323 34.382769-18.116923 26.47959-331.460923 498.372923-331.460924 498.372923-10.003692 14.506667-20.611282 20.374974-33.792 20.374975-13.193846 0-23.788308-5.868308-33.778871-20.374975 0 0-313.370256-471.893333-331.474052-498.372923-18.090666-26.505846-27.753025-34.382769-74.67323-34.382769h-109.554872c-25.206154 0-36.758974 19.442872-20.900103 43.191795l374.258872 560.548102c58.066051 84.256821 100.680205 118.311385 196.122256 118.311385s138.056205-34.054564 196.135385-118.311385l374.245744-560.548102c15.858872-23.748923 4.332308-43.191795-20.900103-43.191795m-1442.198974 45.778051c0-32.794256 12.8-45.778051 45.108513-45.778051h80.462769c32.295385 0 45.095385 12.996923 45.095384 45.778051v630.482052c0 32.794256-12.8 45.791179-45.095384 45.791179h-80.462769c-32.295385 0-45.108513-12.996923-45.108513-45.791179zm-6.721641-199.771897c-26.046359-26.033231-26.046359-46.683897 0-72.730257l55.676718-55.676718c26.046359-26.059487 46.697026-26.059487 72.743384-.013128l55.702975 55.676718c26.033231 26.059487 26.033231 46.710154 0 72.756513l-55.702975 55.676718c-26.046359 26.046359-46.697026 26.046359-72.730256 0l-55.689846-55.676718zm-166.439385 153.993846h-109.436718c-46.867692 0-56.530051 7.903179-74.594461 34.382769-18.090667 26.47959-331.11959 498.359795-331.11959 498.359795-9.977436 14.506667-20.571897 20.374974-33.739487 20.374974-13.193846 0-23.775179-5.868308-33.765744-20.374974 0 0-313.028923-471.893333-331.093333-498.372923-18.06441-26.466462-27.726769-34.369641-74.594462-34.369641h-109.436718c-28.120615 0-36.719589 19.442872-20.873846 43.191795 15.819487 23.762051 373.838769 560.534974 373.838769 560.534974 58.013539 84.269949 100.601436 118.324513 195.925334 118.324513 95.310769 0 137.911795-34.054564 195.912205-118.324513l373.851897-560.534974c15.832615-23.748923 7.246769-43.191795-20.873846-43.191795"></path>
+</g>
+</svg>
+</a>
+</div>
+<div class="vep-head-menu" id="J_dataMenuViewStat" data-view-stat="cfrom=1002">
+<a class="vep-head-nav" data-nav-home href="//www.vivo.com/in">Home</a>
+<a class="vep-head-nav" data-nav-products href="//www.vivo.com/in/products">Products</a>
+<a class="vep-head-nav J-vep-switch" data-nav-e-store data-href="//shop.vivo.com/in/?utm_source=vivoWebsite&utm_medium=topmenu_estore&utm_campaign=vivo_estore&cid=vivoWebsite_topmenu_estore" href="//mshop.vivo.com/in/?utm_source=vivoWebsite&utm_medium=topmenu_estore&utm_campaign=vivo_estore&cid=vivoWebsite_topmenu_estore">E-Store</a>
+<a class="vep-head-nav" data-nav-retailers href="//www.vivo.com/in/where-to-buy">Retail Stores</a>
+<a class="vep-head-nav" data-nav-support href="//www.vivo.com/in/support">Support</a>
+<a class="vep-head-nav" data-nav-funtouch-os href="//www.vivo.com/in/funtouch">Funtouch OS</a>
+<a class="vep-head-nav" data-nav-about-vivo href="//www.vivo.com/in/about-vivo">About vivo</a>
+<a class="vep-head-nav vep-head-search">
+<i class="vep-head-search-icon vicon-search"></i>
+Search
+</a>
+</div>
+<div class="vep-head-glass vicon-search"></div>
+<div class="vep-head-close vicon-close"></div>
+<div class="vep-head-personal">
+<div class="vep-head-personal-icon vicon-personal"></div>
+<ul class="vep-head-personal-box">
+<li class="vep-head-li">
+<a class="vep-head-cart J-vep-switch" data-href="//shop.vivo.com/in/cart/list?utm_source=vivoWebsite&utm_medium=cart&utm_campaign=vivo_cart&cid=vivoWebsite_cart" href="//mshop.vivo.com/in/cart/list?utm_source=vivoWebsite&utm_medium=cart&utm_campaign=vivo_cart&cid=vivoWebsite_cart">
+<i class="vep-head-li-icon vep-head-li-cart vicon-cart"></i>
+<p class="vep-head-li-txt">Cart
+<span class="vep-head-li-num vep-hide"></span>
+</p>
+</a>
+</li>
+<li class="vep-head-li">
+<a class="vep-head-order J-vep-switch" data-href="//shop.vivo.com/in/my/order/list?utm_source=vivoWebsite&utm_medium=cart&utm_campaign=vivo_cart&cid=vivoWebsite_cart" href="//mshop.vivo.com/in/my/order/list?utm_source=vivoWebsite&utm_medium=myorders&utm_campaign=vivo_my_orders&cid=vivoWebsite_myorders">
+<i class="vep-head-li-icon vep-head-li-order vicon-order"></i>
+<p class="vep-head-li-txt">My Orders</p>
+</a>
+</li>
+<li class="vep-head-li">
+<a class="vep-head-account">
+<i class="vep-head-li-icon vep-head-li-signin vicon-personal"></i>
+<p class="vep-head-li-txt">Sign in/Register</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="vep-head-search-box vep-hide">
+<div class="vep-head-search-input">
+<input class="vep-head-input" type="text">
+</div>
+<div class="vep-head-search-sub"></div>
+</div>
+<div class="vep-head-shade vep-hide"></div>
+</div>
+</div>
+</div>
+</div></nav>
+<div class="hide_impt">
+<img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAUCAMAAADfuh9AAAAAaVBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8G612AAAAInRSTlMA3SYKFvkb9e/q483GvratOzYuDwbS8KWRh2BWTUUv05ybuG1T+AAAAKRJREFUKM+NkFcOwyAQRNcFG3fAvSaZ+x8ysiILEcDJ+2FHemgLfbMs9IOVsfXe2BjAtjtjZ5hnsN1viBQT0YRU+Aw54Hm+LwzSbSiO8VON4MplhBmaq26QhQ4jR91doauRW04SoIp0jCoEiWnEAcrT0E6JIDaMHkVLBm2BPjbiQ0fXt6jUja3m9mj2CvaC9iH0mfznVCk/yMvBU0UkJN0gBf3BG1TOCeyHRGrhAAAAAElFTkSuQmCC" data-top-arr>
+</div>
+<div class="public pro_del-title-bg-po" id="proDelTitle" data-view-stat="cfrom=1232">
+<div class="pro_del-title-bg">
+<div class="container pro_del-title clearafter">
+<div class="arr public_position-center"></div>
+<h1 class="no-flip-over">V17</h1>
+<a class="product-buy-button no-flip-over" href="https://shop.vivo.com/in/product/10085?utm_source=vivoWebsite&utm_medium=product_V17_buynow&utm_campaign=vivo_V17&cid=vivoWebsite_product_V17_buynow" data-buy-now data-title="V17" data-name="E-Store">
+Buy-now
+</a>
+<div class="pro-del-box">
+<ul class="pro-del-box-list">
+<li class="active no-flip-over" data-local-Overview data-click-stat="cfrom=1231&name=Overview&position=1"><a
+href="/in/products/v17"
+>Overview</a></li>
+<li class="no-flip-over" data-local-Gallery data-click-stat="cfrom=1231&name=Gallery&position=2">Gallery</li>
+<li class="no-flip-over" data-local-Parameter data-click-stat="cfrom=1231&name=Parameter&position=3"><a
+href="/in/products/param/v17"
+>Parameter</a></li>
+</ul>
+<div class="pro-del-opa"></div>
+</div>
+</div>
+</div>
+</div>
+<div><div class="J_replace_content">
+<script>var PATH = 'https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1576481722288/'; var IMAGE_HOST = 'https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1576481722288/'; </script>
+<link rel="stylesheet" href="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1576481722288/zip/css/uimix_common.css">
+<link rel="stylesheet" href="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1576481722288/zip/css/app.css">
+<link rel="stylesheet" href="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1576481722288/zip/css/global.css">
+<div id="vivo-product-wrap" class="unvisible __uimix_wrapper gb-lang-in">
+<div style="display:none"></div>
+<div class="product-main-wrapper">
+<div class="product-main-content">
+<div class="product-nav-tab" data-theme="wihte">
+<div class="product-nav-wrapper">
+<div class="product-nav-content">
+<ul class="nav-list">
+<li> <a href="#" data-page-tab="highlights">Highlights</a> </li>
+<li> <a href="#" data-page-tab="camera">Camera</a> </li>
+<li> <a href="#" data-page-tab="design">Design</a> </li>
+<li> <a href="#" data-page-tab="performance">Performance</a> </li>
+</ul>
+<i class="nav-bar"></i>
+</div>
+</div>
+</div>
+<div class="page-tab current">
+<div class="stage v17-kv">
+<div class="section">
+<div class="content">
+<div class="title text-center">
+<picture class="t1"></picture>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+</div>
+</div>
+<div class="stage v17-super" data-animate>
+<div class="bg lazy-imageom"></div>
+<div class="section">
+<div class="content">
+<div class="title text-center">
+<h2>Super Night Camera (Front &amp; Rear)</h2>
+<h2 class="minor-title">Defy the Night</h2>
+<p class="intro">Amaze after dark with the V17 rear camera’s Super Night Mode, featuring advanced noise reduction capabilities in its rear camera. The Super Night Selfie feature brings stunning nighttime shots to the front camera too, supported by frame-merging technology, HDR and vivo’s own portrait algorithm. Whichever camera you’re using, beautiful results await when night falls.</p>
+</div>
+</div>
+</div>
+<div class="figure lazy-imageom" data-animate></div>
+</div>
+<div class="stage v17-screen">
+<div class="bg lazy-imageom"></div>
+<div class="section">
+<div class="content">
+<div class="title text-center">
+<h2><i class="iview-logo lazy-imageom"></i><br>View A New World</h2>
+<p class="intro">Explore a brave new world with iView Display. This 16.36cm(6.44)FHD+ Display takes a bionic approach, housing a super-clear front camera for a futuristic look.</p>
+<div class="data-vertical">
+<ul>
+<li> <p class="font_num">20:9</p> <p>Aspect Ratio</p> </li>
+<li> <p class="font_num">91.38%</p> <p class="num_1">Screen to Body Ratio</p> </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+</div>
+</div>
+</div>
+<div class="page-tab tab-camera">
+<div class="stage v17-super2">
+<div class="section">
+<div class="content">
+<div class="title text-center">
+<h2>Super Night Camera (Front &amp; Rear)</h2>
+<h2 class="minor-title">Defy the Night</h2>
+<p class="intro">Amaze after dark with the V17 rear camera’s Super Night Mode, featuring advanced noise reduction capabilities in its rear camera. The Super Night Selfie feature brings stunning nighttime shots to the front camera too, supported by frame-merging technology, HDR and vivo’s own portrait algorithm. Whichever camera you’re using, beautiful results await when night falls.</p>
+</div>
+</div>
+</div>
+<div class="figure g-banner" id="photo-banner-super2">
+<div class="image-wrapper">
+<div class="photo">
+<div class="wrapper background-cove">
+<figure class="f1 lazy-imageom"></figure>
+</div>
+</div>
+<div class="photo">
+<div class="wrapper background-cove">
+<figure class="f2 lazy-imageom"></figure>
+</div>
+</div>
+</div>
+<div class="status">
+<div class="banner-text">
+<div class="banner-title">
+<div class="bar">
+<div class="inner-bar"></div>
+<span class="click"></span>
+</div>
+</div>
+</div>
+<div class="banner-text">
+<div class="banner-title">
+<div class="bar">
+<div class="inner-bar"></div>
+<span class="click"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="txt-wrapper">
+<div class="photo_txt">
+<p>Super Night Selfie</p>
+</div>
+<div class="photo_txt">
+<p>Super Night Mode</p>
+</div>
+</div>
+</div>
+</div>
+<div class="stage v17-camera">
+<div class="bg lazy-imageom"></div>
+<div class="section">
+<div class="content">
+<div class="title">
+<h2>48MP AI Quad Rear Camera <br>Simply Professional</h2>
+<p class="intro">The powerful quad-camera setup includes a 48MP main camera, 8MP super wide-angle camera, 2MP macro camera and 2MP bokeh camera. Four cameras - infinite possibilities.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+</div>
+</div>
+<div class="stage v17-without" id="v17-without">
+<div class="bg lazy-imageom"></div>
+<div class="section">
+<div class="content">
+<div class="title" id="v17-without-title">
+<h2>Super Wide-Angle Camera <br>120-Degree Spectacle</h2>
+<p class="intro">Let your imagination run free and pack galaxies of stars into one frame with 120-degree super wide angle.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate id="without-figure">
+<figure class="f1 lazy-imageom" id="enlarge_f2"></figure>
+<div class="box1" id="without_box1">
+<div class="before" id="without_before1"></div>
+</div>
+<div class="box2" id="without_box2">
+<div class="before" id="without_before2"></div>
+</div>
+<div class="box3" id="without_box3"></div>
+<div class="box4" id="without_box4"></div>
+<div class="without-title">
+<p>Super Wide-Angle OFF</p>
+<p>Super Wide-Angle ON</p>
+</div>
+</div>
+<div class="innertips">
+<div class="tip">
+* Super wide-angle camera is able to capture 108-degree photos after accounting for distortion.
+</div>
+</div>
+</div>
+<div class="stage v17-macro">
+<div class="section">
+<div class="content">
+<div class="title">
+<h2>Super Macro Camera <br>Reveal Life's Little Wonders</h2>
+<p class="intro">See the untapped tiny world up close with 4cm focus.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+<div class="scale_f2">
+<figure class="f2 lazy-imageom"></figure>
+</div>
+</div>
+</div>
+<div class="stage v17-beauty" data-animate>
+<div class="section">
+<div class="content">
+<div class="title">
+<h2>Ultra Stable Video <br>Perfect Frame</h2>
+<p class="intro">Even with shaky hands, you can record clear and stable videos. V17 helps you make every frame count, because every second of your life is worth cherishing.</p>
+</div>
+</div>
+</div>
+<div class="figure lazy-imageom" data-animate>
+</div>
+</div>
+<div class="stage v17-frontcamera">
+<div class="section">
+<div class="content">
+<div class="title">
+<h2>32MP Front Camera <br>Open Your Eyes to the World</h2>
+<p class="intro">Capture every little detail with a cutting-edge 32MP front camera that brings supreme clarity to your world.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+</div>
+</div>
+<div class="stage v17-pose">
+<div class="section">
+<div class="content">
+<div class="title">
+<h2>Pose Master <br>Be a Supermodel</h2>
+<p class="intro">Whatever scene you're in, you can strike the perfect pose. With the V17 offering guidance, boost your confidence and wow like a supermodel.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+</div>
+</div>
+<div class="stage v17-arfun" data-animate>
+<div class="section">
+<div class="content">
+<div class="title text-center">
+<h2>AR Stickers <br>Now with Added Fun</h2>
+<p class="intro">Enjoy the benefits of intelligent technology with a major update to AR Stickers. It now detects your hand gestures and facial expressions, automatically pairing them with ideal sticker combinations to add that magical touch to your portraits.</p>
+</div>
+</div>
+</div>
+<div class="figure">
+<figure class="f1 lazy-imageom"></figure>
+</div>
+</div>
+</div>
+<div class="page-tab tab-design">
+<div class="stage v17-seize">
+<div class="bg lazy-imageom"></div>
+<div class="section">
+<div class="content">
+<div class="title text-center">
+<h2><i class="iview-logo lazy-imageom"></i><br>Seize the world with V17</h2>
+<p class="intro">Experience immersive viewing with iView Display. The 16.36cm (6.44) display takes a bionic approach, housing a super - clear Front Camera for a futuristic look.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+</div>
+</div>
+<div class="stage v17-design">
+<div class="section">
+<div class="content">
+<div class="title text-center">
+<h2>New Generation E3 Super AMOLED <br>Delight Your Eyes</h2>
+<p class="intro">The customized next-gen Super AMOLED display is made of the latest E3 OLED and features an aspect ratio of 20:9. It also offers 100% DCI-P3 Color gamut, bringing vibrant and authentic colors to life. Enjoy this tantalizing view without eyestrain, as V17 filters out 42% of blue light. In addition, low brightness anti-flicker technology provides added protection for eyes in the dark.</p>
+<div class="innertips">
+<div class="tip">
+*The display can adjust brightness automatically, so your viewing experience won't be compromised either in sunlight or in the dark.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+<figure class="f2 lazy-imageom"></figure>
+<figure class="f3 lazy-imageom"></figure>
+<figure class="f4 lazy-imageom"></figure>
+<figure class="f5 lazy-imageom"></figure>
+</div>
+</div>
+<div class="stage v17-fashion">
+<div class="section">
+<div class="content">
+<div class="title">
+<h2>Trendy Design <br>Show Your <br>Fashion Code</h2>
+<p class="intro">V17's rear camera matrix features unique geometric symmetry with a retro-styled design inspired by compact cameras. Four cameras sit within a rectangle's elegant rounded corners like a code waiting to be deciphered. Brilliant colors and a glossy finish complete its trendy look.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+<figure class="f2 lazy-imageom current"></figure>
+<div class="data-vertical" data-animate>
+<ul>
+<li class="color1"> <p class="lineWhite"><span></span></p> <p>Glacier Ice</p> </li>
+<li class="current color2"> <p class="lineBlack"><span></span></p> <p>Midnight Ocean</p> </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="stage v17-fingerprint">
+<div class="section">
+<div class="content">
+<div class="title">
+<h2>Next Level In-Display Fingerprint Scanning <br>Fast and Safe</h2>
+<p class="intro">The fingerprint scanning sensor now features a 3P lens supported by vivo's intelligent algorithm, giving you even faster access to your mobile world.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+<div class="circleBox">
+<div id="f2_circle" class="f2 lazy-imageom" data-animate>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="page-tab tab-performance">
+<div class="stage v17-ram">
+<div class="section">
+<div class="content">
+<div class="title text-center">
+<h2>Qualcomm Snapdragon 675 AIE <br>8GB + 128GB</h2>
+<p class="intro">Qualcomm Snapdragon 675 AIE octa-core processor offers smooth operation and low power consumption. With 8GB RAM and 128GB ROM, you get expanded storage space and an elevated experience.</p>
+<div class="data-vertical">
+<ul>
+<li> <p>675 AIE</p> <p>Qualcomm Snapdragon</p> </li>
+<li> <p>8GB</p> <p class="num_1">RAM</p> </li>
+<li class="icon_1"> <p>128GB</p> <p>ROM</p> </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+</div>
+<div class="innertips">
+<div class="tip">
+* Qualcomm Snapdragon is a product of Qualcomm Technologies, Inc and/or its subsidiaries.
+</div>
+</div>
+</div>
+<div class="stage v17-fastcharging">
+<div class="section">
+<div class="content">
+<div class="title">
+<h2>Dual-Engine Fast Charging <br>&amp; 4500mAh</h2>
+<p class="intro">Enjoy 4500mAh of battery capacity, plus vivo's exclusive Dual-Engine Fast Charging. Stay juiced all day long and recharge in a flash.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+<div class="fastchargingBox">
+<div id="f2_fastcharging" class="f2 lazy-imageom" data-animate>
+</div>
+</div>
+</div>
+</div>
+<div class="stage v17-turbo">
+<div class="bg lazy-imageom"></div>
+<div class="section">
+<div class="content">
+<div class="title text-center">
+<h2>Boost Your Experience</h2>
+<p class="intro">vivo's Multi-Turbo covers all aspects at the system level to enhance user experience. It includes AI Turbo, Center Turbo, Game Turbo, Net Turbo, Cooling Turbo and ART++ Turbo, improving underlying compilation efficiency, system response and performance.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+</div>
+</div>
+<div class="stage v17-game">
+<div class="bg lazy-imageom"></div>
+<div class="section">
+<div class="content">
+<div class="title">
+<h2>Total Game Immersion</h2>
+<p class="intro">Game Center creates your very own gaming arena and gathers your game data. Check real-time CPU, GPU and temperature data, so you're always in the know. With Ultra Game Mode, it can also help you block messages and alerts, so you can fully concentrate on winning the game at hand.</p>
+<div class="innertips">
+<div class="tip">
+©️ ANY PUBG MOBILE RELATED COPYRIGHTS, ALL RIGHTS RESERVED BY PUBG CORPORATION AND TENCENT
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="stage v17-changer">
+<div class="bg lazy-imageom"></div>
+<div class="section">
+<div class="content">
+<div class="title">
+<h2>Voice Changer</h2>
+<p class="intro">Talk to teammates in entertaining new voices to suit your mood. It's the feature that brings fun to your gameplay while protecting your privacy.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+</div>
+<div class="innertips">
+<div class="tip">
+©️ANY PUBG MOBILE RELATED COPYRIGHTS, ALL RIGHTS RESERVED BY PUBG CORPORATION AND TENCENT
+</div>
+</div>
+</div>
+<div class="stage v17-autoplay">
+<div class="bg lazy-imageom"></div>
+<div class="section">
+<div class="content">
+<div class="title">
+<h2>Off-Screen Autoplay</h2>
+<p class="intro">Lock your screen as you like, safe in the knowledge that your games will run nicely in the background, so you are free to focus on what's at hand.</p>
+</div>
+</div>
+</div>
+<div class="figure" data-animate>
+<figure class="f1 lazy-imageom"></figure>
+</div>
+<div class="innertips">
+<div class="tip">
+©️ ANY PUBG MOBILE RELATED COPYRIGHTS, ALL RIGHTS RESERVED BY PUBG CORPORATION AND TENCENT
+</div>
+</div>
+</div>
+</div>
+<div class="stage stage-tips">
+<div class="tip-content">
+<h4>Disclaimer:</h4>
+<ul class="case">
+<li>1. Measured diagonally, the screen size is 16.36cm(6.44) in a full rectangle and 15.77cm(6.21) with rounded corners.</li>
+<li>2. 4500mAh refers to typical battery capacity.</li>
+<li>3. The product pictures shown are for reference only, the images shown on the display screen are simulated, and for demonstration purposes only. Please take actual products as standard. All comparisons shown on this page refer to vivo products only.</li>
+<li>4. All data is based on our technical design parameters, laboratory test results and supplier test data. Actual performance may vary depending on software version, specific test environment and phone model. All comparisons shown on this page refer to vivo products only.</li>
+<li>5. vivo reserves the right to amend these specifications and descriptions, and amend the product described without giving any prior notice.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="product-detail-wrapper"></div>
+<i class="expand-container-mask"></i>
+<div class="expand-container-button ec-botton-close">
+<div class="ec-button-wrapper ec-close-btn">
+<a href="#"> <b class="iconfont-symbol-products ico-symbol-close1"></b> </a>
+</div>
+</div>
+<script src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1576481722288/zip/js/jquery.mousewheel.min.js"></script>
+<script src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1576481722288/zip/js/TweenMax.min.js"></script>
+<script src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1576481722288/zip/js/ScrollMagic.min.js"></script>
+<script src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1576481722288/zip/js/animation.js"></script>
+</div>
+<script src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1576481722288/zip/js/app.js"></script>
+</div></div>
+<!-- gallery 画廊轮播图 -->
+<div class="public pro_del_gallery hide_impt">
+<div class="close"></div>
+<div class="pro_del_gallery-container-box">
+<!-- swiper 轮播 -->
+<div class="swiper-container pro_del_gallery-container">
+<div class="swiper-wrapper pro_del_gallery-wrapper">
+<div class="swiper-slide pro_del_gallery-slide"><img class="no-flip-over" data-local-src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1575701188953/f8a797d1d1661c9b314eebaa03ba57d5.jpg"></div>
+<div class="swiper-slide pro_del_gallery-slide"><img class="no-flip-over" data-local-src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1575701193531/7d9c2d6d7c8d57bf56a4c75a423844e1.jpg"></div>
+<div class="swiper-slide pro_del_gallery-slide"><img class="no-flip-over" data-local-src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1575701194344/2ae6fcb9b03bfc8f2133f03972a476a4.jpg"></div>
+<div class="swiper-slide pro_del_gallery-slide"><img class="no-flip-over" data-local-src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1575701199632/9b8f7e7edd702375eb25579040ce963d.jpg"></div>
+<div class="swiper-slide pro_del_gallery-slide"><img class="no-flip-over" data-local-src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1575701200965/1f4d6d21407cf534d0d0d6c548ae8a7a.jpg"></div>
+<div class="swiper-slide pro_del_gallery-slide"><img class="no-flip-over" data-local-src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1575701202592/6ace573f1ae2f64778124972fa10ed58.jpg"></div>
+<div class="swiper-slide pro_del_gallery-slide"><img class="no-flip-over" data-local-src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1575701209195/2c36ada98613096c1f288799fa4dcc8c.jpg"></div>
+<div class="swiper-slide pro_del_gallery-slide"><img class="no-flip-over" data-local-src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1575701214362/5342ff594ea05ef891333d7663b474d5.jpg"></div>
+<div class="swiper-slide pro_del_gallery-slide"><img class="no-flip-over" data-local-src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1575701216981/94b8a8483cec5741a79e37404e2cc67b.jpg"></div>
+</div>
+</div>
+</div>
+<div class="swiper-pagination pro_del_gallery-pagination"></div>
+</div>
+<div class="suspension-inlet">
+<a class="chat-export">
+<i class="chat-icon no-flip-over"></i>
+<span class="chat-text no-flip-over">Chat</span>
+</a>
+<div class="back-top-export"></div>
+</div>
+<footer id="footer">
+<div id="vivo-foot-wrap" class="vivo-foot-wrap ">
+<div id="vivo-foot-path" class="public container common_crumb clearafter">
+<a class="common_crumb-icon no-flip-over" href="/in">vivo</a>
+<p></p>
+<a class="no-flip-over" href="/in/products">Products</a>
+<p></p>
+<a class="no-flip-over"
+href="/in/products/v17"
+>V17</a>
+</div>
+<div class="vep-foot vep-public vep-responsive">
+<div class="vep-foot-common">
+<div class="vep-foot-category">
+<div class="vep-foot-category-top vep-clearfix">
+<ul class="vep-foot-category-ul vep-left">
+<li class="vep-left" data-view-stat="cfrom=1007&module=Popular Links">
+<dl class="vep-foot-category-dl">
+<dt class="vep-foot-category-dt">Popular Links</dt>
+<dd><a href="//www.vivo.com/in/products/v17pro">V17 Pro</a></dd>
+<dd><a href="//www.vivo.com/in/products/v17">V17</a></dd>
+<dd><a href="//www.vivo.com/in/products/y19">Y19</a></dd>
+<dd><a href="//www.vivo.com/in/products/y11">Y11</a></dd>
+<dd><a href="//www.vivo.com/in/product/activity/59">B2B Sales</a></dd>
+<dd><a href="//www.vivo.com/in/products?choose=all">All Models</a></dd>
+<dd><a href="//www.vivo.com/in/where-to-buy">Retail Store</a></dd>
+</dl>
+</li>
+<li class="vep-left" data-view-stat="cfrom=1007&module=Purchase Online">
+<dl class="vep-foot-category-dl">
+<dt class="vep-foot-category-dt">Purchase Online</dt>
+<dd><a class="J-vep-switch" data-href="//shop.vivo.com/in" href="//mshop.vivo.com/in/?utm_source=vivoWebsite&utm_medium=footer_estore&utm_campaign=vivo_estore&cid=vivoWebsite_footer_estore">E-Store</a></dd>
+<dd><a class="J-vep-switch" data-href="//shop.vivo.com/in/product/phone" href="//mshop.vivo.com/in/product/phone?utm_source=vivoWebsite&utm_medium=footer_buyphones&utm_campaign=vivo_mobiles&cid=vivoWebsite_footer_buyphones">Buy Phones</a></dd>
+<dd><a class="J-vep-switch" data-href="//shop.vivo.com/in/product/parts" href="//mshop.vivo.com/in/product/parts?utm_source=vivoWebsite&utm_medium=footer_buyaccessories&utm_campaign=vivo_accessories&cid=vivoWebsite_footer_buyaccessories">Buy Accessories</a></dd>
+<dd><a class="J-vep-switch" data-href="//shop.vivo.com/in/my/order/list" href="//mshop.vivo.com/in/my/order/list?utm_source=vivoWebsite&utm_medium=footer_myorders&utm_campaign=vivo_my_orders&cid=vivoWebsite_footer_myorders">My Orders</a></dd>
+</dl>
+</li>
+<li class="vep-left" data-view-stat="cfrom=1007&module=Support">
+<dl class="vep-foot-category-dl">
+<dt class="vep-foot-category-dt">Support</dt>
+<dd><a href="//www.vivo.com/in/support/questionList">FAQs</a></dd>
+<dd><a href="//www.vivo.com/in/support/service-center">Service Center</a></dd>
+<dd><a href="//www.vivo.com/in/funtouch">Funtouch OS</a></dd>
+<dd><a href="//www.vivo.com/in/support/system-update">System Update</a></dd>
+<dd><a href="//www.vivo.com/in/support/accessory">Query of Spare Parts Price</a></dd>
+<dd><a href="//www.vivo.com/in/support/IMEI">IMEI Authentication</a></dd>
+</dl>
+</li>
+<li class="vep-left" data-view-stat="cfrom=1007&module=About vivo">
+<dl class="vep-foot-category-dl">
+<dt class="vep-foot-category-dt">About vivo</dt>
+<dd><a href="//www.vivo.com/in/about-vivo/culture">Info</a></dd>
+<dd><a href="//www.vivo.com/in/about-vivo/news">Press</a></dd>
+<dd><a href="//www.vivo.com/in/about-vivo/career/jobs">Careers at vivo</a></dd>
+<dd><a href="//www.vivo.com/in/activity/E-Waste">E-waste Management</a></dd>
+<dd><a href="//www.vivo.com/in/product/activity/54">Terms and Conditions</a></dd>
+<dd><a href="//www.vivo.com/in/product/activity/55">Investor Information</a></dd>
+</dl>
+</li>
+</ul>
+<div class="vep-foot-msg">
+<div class="vep-foot-msg-box">
+<p class="vep-foot-p">vivo Customer Care</p>
+<a class="vep-foot-l vep-foot-chat" target="_blank" href="javascript:;" data-click-stat="cfrom=1008&module=3">
+<i class="vep-foot-icon-chat"></i>
+Chat with us
+</a>
+<a class="vep-foot-l vep-foot-tel">
+<i class="vep-foot-icon-tel vicon-phone"></i>
+<span class="vep-foot-tel-span" data-href="tel:1800-208-3388">1800-208-3388</span>
+<span>/</span>
+<span class="vep-foot-tel-span" data-href="tel:1800-102-3388">1800-102-3388 (24*7)</span>
+</a>
+<a class="vep-foot-l vep-foot-email" data-href="vcare@vivo.com">
+<i class="vep-foot-icon-email vicon-email"></i>
+Email Us
+</a>
+</div>
+<div class="vep-foot-msg-box">
+<p class="vep-foot-p">Follow us</p>
+<div class="vep-foot-icon clearfix">
+<a href="https://www.facebook.com/vivoIndia" target="_blank" class="vep-foot-msg-icon" data-title="facebook">
+<i class="vep-foot-facebook-icon"></i>
+</a>
+<a href="https://www.instagram.com/vivo_india/" target="_blank" class="vep-foot-msg-icon" data-title="instagram">
+<i class="vep-foot-instagram-icon"></i>
+</a>
+<a href="https://www.youtube.com/c/vivoIndiaofficial" target="_blank" class="vep-foot-msg-icon" data-title="youtube">
+<i class="vep-foot-youtube-icon"></i>
+</a>
+<a href="https://twitter.com/vivo_India" target="_blank" class="vep-foot-msg-icon" data-title="twitter">
+<i class="vep-foot-twitter-icon"></i>
+</a>
+<a href="https://www.linkedin.com/company/vivo-india/" target="_blank" class="vep-foot-msg-icon" data-title="linkedin">
+<i class="vep-foot-linkedin-icon"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="vep-foot-category-btm vep-clearfix">
+<a class="vep-left" href="//www.vivo.com/in/about-vivo/privacy-policy">Privacy Policy</a>
+<a class="vep-left" href="//www.vivo.com/in/index/warrantyTerms">Warranty Terms</a>
+<a class="vep-left J-vep-switch" data-href="//shop.vivo.com/in/agreement/payment" href="//mshop.vivo.com/in/agreement/payment?utm_source=vivoWebsite&utm_medium=footer_paymentterms&utm_campaign=vivo_payment_terms&cid=vivoWebsite_footer_paymentterms">Payment Terms and Policies</a>
+<a class="vep-foot-global" href="//www.vivo.com/in/index/ipredirection">India-English</a>
+</div>
+</div>
+<div class="vep-foot-copyright">Copyright © 2020 vivo Mobile Communication Co., Ltd. All rights reserved.</div>
+</div>
+</div> </div>
+</footer>
+</body>
+<script src="//asia-exstatic.vivo.com/dist/js/public_7331ade.js"></script>
+<script>
+var vpgParam = {}
+vpgParam.pageType = "responsive";
+vpgParam.countryCode = 'in';
+vpgParam.isUserLogin = 'false';
+vpgParam.loginUrl = 'https://passport.vivo.com/in/v3/web/login/authorize?client_id=30&redirect_uri=http%3A%2F%2Fwww.vivo.com%3A80%2Fin%2Fproducts%2Fv17';
+vpgParam.personalCenterUrl = 'https://passport.vivo.com/in/#/personalCenter?clientId=30';
+vpgParam.layoutShow = '0';
+vpgParam.isGDPR='false'
+</script>
+<script src="//asia-exstatic.vivo.com/dist/js/plugins/vepGlobal/vep-global_bbf71d7.js"></script> <script src="//asia-exstatic.vivo.com/dist/lib/swiper/swiper.4.3.2.min_ec48904.js"></script>
+<script src="//asia-exstatic.vivo.com/dist/js/product/product-del_e461abd.js"></script>
+<script>
+window.addEventListener('load', function () {
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPPMHB7');
+})
+</script>
+</html>
